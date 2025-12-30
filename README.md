@@ -2,11 +2,11 @@ Hynitron CST9217 Touchscreen
 
 ---
 <a name="english-version"></a>
-1. Device Tree (DTS) Configuration
+Device Tree (DTS) Configuration
 Add the following node to your I2C bus section (e.g., &i2c1):
 
-   ```dts
-   hynitron@5a {
+    ```dts
+    hynitron@5a {
     compatible = "hynitron,hyn_ts";
     reg = <0x5a>;
     /* GPIO: <Bank Pin Flags> */
@@ -15,7 +15,7 @@ Add the following node to your I2C bus section (e.g., &i2c1):
     hynitron,max-touch-number = <0x05>;
     hynitron,display-coords = <0x170 0x1c0>; /* 368x448 */
     vdd_name = "vddsdcore";
-   };
+    };
 
 | Property       | Description                                   |
 | -------------- | --------------------------------------------- |
