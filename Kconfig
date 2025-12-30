@@ -1,0 +1,7 @@
+config TOUCHSCREEN_CST9217
+	tristate "CST9217 based touch panel controllers"
+	depends on I2C
+	depends on INPUT
+	help
+	  Say Y here if you have hynitron touch panel.
+	  If unsure, say N.
