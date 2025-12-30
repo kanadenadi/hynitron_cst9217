@@ -1,4 +1,4 @@
-Hynitron CST9217 Touchscreen Configuration Guide
+Hynitron CST9217 Touchscreen
 
 ---
 <a name="english-version"></a>
@@ -27,5 +27,7 @@ Add the following node to your I2C bus section (e.g., &i2c1):
 | vdd_name       | Power supply name.                            |
 
 Tips:
+
   Check kernel log for initialization and errors: dmesg | grep HYN_TS
+  
   Test touch event reporting: getevent -lt
