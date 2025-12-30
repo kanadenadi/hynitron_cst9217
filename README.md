@@ -5,7 +5,7 @@ Hynitron CST9217 Touchscreen
 Device Tree (DTS) Configuration
 Add the following node to your I2C bus section (e.g., &i2c1):
 
-    ```dts
+    
     hynitron@5a {
     compatible = "hynitron,hyn_ts";
     reg = <0x5a>;
